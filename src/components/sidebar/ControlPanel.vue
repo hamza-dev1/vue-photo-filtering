@@ -2,19 +2,19 @@
 
     <aside class="divide-y">
         <ImageLoader />
-        <FilterOptions />
+        <FiltersPanel />
     </aside>
 
 </template>
 
 <script>
-import ImageLoader from '@/components/sidebar/ImageLoader';
-import FilterOptions from '@/components/sidebar/FilterOptions';
+import ImageLoader from '@/components/sidebar/loader/ImageLoader';
+import FiltersPanel from '@/components/sidebar/filter/FiltersPanel';
 export default {
     name: 'ControlPanel',
     components: {
         ImageLoader,
-        FilterOptions,
+        FiltersPanel,
     }
 }
 </script>
