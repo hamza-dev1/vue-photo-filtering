@@ -1,8 +1,8 @@
 <template>
   <Navbar />
   <main class="h-screen flex divide-x-2">
-    <ControlPanel class="w-1/6 h-full bg-red-300" />
-    <ImageContainer class="w-5/6 h-full bg-red-300" />
+    <ControlPanel class="w-2/6 h-full bg-red-300" />
+    <ImageContainer class="w-4/6 h-full bg-red-300" />
   </main>
 </template>
 
