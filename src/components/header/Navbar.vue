@@ -52,12 +52,10 @@ export default {
         const toggleNavbarState = () => {
             isNavbarHidden.value = !isNavbarHidden.value;
             if (isNavbarHidden.value) {
-                console.log('dkdkdk');
                 isThemeToggleHidden.value = true;
             }
         }
         const toggleThemeState = () => {
-            console.log('kjflkjdfs');
             isThemeToggleHidden.value = !isThemeToggleHidden.value;
         }
         return {
