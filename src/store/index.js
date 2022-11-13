@@ -1,5 +1,5 @@
 import { createStore } from 'vue';
-import userModule from '@/modules/user.module'
+import filterModule from '@/modules/filter.module'
 
 export default createStore({
     state: {},
