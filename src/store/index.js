@@ -1,12 +1,18 @@
-import { createStore } from 'vue';
-import filterModule from '@/modules/filter.module'
+import { createStore } from 'vuex';
+import filterModule from '@/store/modules/filter.module'
 
 export default createStore({
-    state: {},
-    getters: {},
+    state: {
+        filterState: filterModule.state
+    },
+    getters: {
+        getFilterState: (state) => {
+            return state.filterState;
+        },
+    },
     mutations: {},
     actions: {},
     modules: {
-        userModule
+        filterModule
     }
 })
