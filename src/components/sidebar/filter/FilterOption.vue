@@ -24,7 +24,8 @@ export default {
     props: ['filter', ],
     setup(props) {
         const filterValueUpdated = () => {
-            // ...
+          document.documentElement.style.setProperty(`--${props.filter.name}`, `${props.filter.value}${props.filter.unit}`);
+          //console.log(`--${props.filter.name}`, `${props.filter.value}${props.filter.unit}`);
         }
 
         return {
