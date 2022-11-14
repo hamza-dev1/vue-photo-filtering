@@ -18,15 +18,25 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+
+import { computed, ref, watch } from 'vue'
+import { useStore } from "vuex";
+
 export default {
   name: 'ImageLoader',
-  setup(props, context) {
-
+  setup() {
+    const store = useStore();
     const imageSrc = ref('');
-
+    
+    const setImageSource = () => {
+      store.dispatch(
+        'filterModule/setImageSource', imageSrc
+      );
+    }
+    
     return {
       imageSrc,
+      setImageSource,
     }
   }
 };
