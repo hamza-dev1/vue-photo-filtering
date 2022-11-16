@@ -1,4 +1,12 @@
 export class FiltersService {
+
+  static image = {
+    width: 0,
+    height: 0,
+    source: "",
+    format: 'image/png'
+  }
+
   static filters = [
     {
       name: "brightness",
@@ -53,5 +61,9 @@ export class FiltersService {
 
   static getAllFilters() {
     return this.filters;
+  }
+
+  static getImage() {
+    return this.image;
   }
 }
