@@ -2,7 +2,7 @@
   <div class="my-5">
     <label
       :for="filter.name"
-      class="block mb-2 text-sm font-medium text-white"
+      class="block mb-2 text-sm font-medium text-black"
       >{{ filter.name }}</label
     >
     <input
@@ -25,7 +25,6 @@ export default {
     setup(props) {
         const filterValueUpdated = () => {
           document.documentElement.style.setProperty(`--${props.filter.name}`, `${props.filter.value}${props.filter.unit}`);
-          //console.log(`--${props.filter.name}`, `${props.filter.value}${props.filter.unit}`);
         }
 
         return {

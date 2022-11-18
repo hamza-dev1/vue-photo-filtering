@@ -1,6 +1,6 @@
 <template>
     <div class="p-5">
-        <h1 class="text-2xl text-white mb-4">
+        <h1 class="text-2xl text-black mb-4">
             Available Filters
         </h1>
         <FilterOption 
